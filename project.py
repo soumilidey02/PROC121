@@ -14,7 +14,6 @@ while True:
     mask = cv2.inRange(frame, l_black, u_black) 
     res = cv2.bitwise_and(frame, frame, mask = mask) 
    
-  
     cv2.imshow("video", frame) 
     cv2.imshow("mask", f) 
     if cv2.waitKey(1) & 0xFF == ord('q'):
